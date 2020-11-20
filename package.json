@@ -1,0 +1,33 @@
+{
+  "name": "@potentii/mongo-connection",
+  "version": "1.0.0",
+  "description": "Package to deal with connecting to MongoDB using mongoose",
+  "main": "main.js",
+  "keywords": [
+    "mongo",
+    "mongoose",
+    "db",
+    "database",
+    "connection",
+    "pool"
+  ],
+  "author": "Guilherme Reginaldo Ruella <potentii@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Potentii/mongo-connection.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Potentii/mongo-connection/issues"
+  },
+  "homepage": "https://github.com/Potentii/mongo-connection#readme",
+  "files": [
+    "main.js",
+    "libs/",
+    "README.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "mongoose": "^5.0.0"
+  }
+}
