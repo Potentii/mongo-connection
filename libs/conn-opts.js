@@ -58,7 +58,7 @@ class ConnOpts{
 	}
 
 	poolSize(poolSize){
-		this._poolSize = poolSize;
+		this._poolSize = Number(poolSize);
 		return this;
 	}
 
@@ -79,9 +79,9 @@ class ConnOpts{
 			.host(process.env.MONGO_HOST || ConnOpts.DEFAULT_HOST)
 			.port(process.env.MONGO_PORT || ConnOpts.DEFAULT_PORT)
 			.dbName(process.env.MONGO_DB_NAME)
-			.poolSize(process.env.MONGO_POOL_SIZE)
+			.poolSize(process.env.MONGO_POOL_SIZE || ConnOpts.DEFAULT_POOL_SIZE)
 			.isSrv(process.env.MONGO_IS_SRV || false)
-			.isSrv(process.env.MONGO_WITHOUT_AUTH_ON_URL || false)
+			.withoutAuthOnUrl(process.env.MONGO_WITHOUT_AUTH_ON_URL || false)
 			.authSource(process.env.MONGO_AUTH_SOURCE || ConnOpts.DEFAULT_AUTH_SOURCE);
 	}
 

@@ -1,3 +1,4 @@
+const mongoose = require('mongoose');
 const ConnectionString = require('./connection-string');
 
 let _instance;
@@ -10,7 +11,7 @@ class MongoPool{
 
 
 	/**
-	 * 
+	 * @type {MongoPool}
 	 * @return {MongoPool}
 	 */
 	static get instance(){
